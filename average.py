@@ -66,4 +66,6 @@ for member in members:
 print "This class's average score = %.2f " % (average(total_class(members)))
 print "Level = %s" % (student_class(average(total_class(members))))
 
+print "TEST"
+
         
