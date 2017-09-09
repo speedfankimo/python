@@ -1,0 +1,27 @@
+n = [[1, 2, 3], [4, 5, 6, 7, 8, 9]]
+# Add your function here
+
+# way 1
+def flatten2(lists2):
+  result =[]
+  for numbers2 in lists2:
+    for number2 in numbers2:
+      result.append(number2)
+  return result
+
+print flatten2(n)
+
+# way 2
+def flatten(lists):
+  results = []
+  for numbers in range(len(lists)):
+    # print lists[numbers]
+    # lists的第幾個index
+    for number in range(len(lists[numbers])):
+      # print lists[numbers][number]
+      results.append(lists[numbers][number])
+      
+  return results
+  
+
+print flatten(n)
