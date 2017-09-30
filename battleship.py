@@ -20,8 +20,9 @@ def random_col(board):
 
 ship_row = random_row(board)
 ship_col = random_col(board)
-print ship_row
-print ship_col
+print "my battleship is on row: %s" % (ship_row)
+print "my battleship is on column:" + str(ship_col)
+print
 
 # Everything from here on should go in your for loop!
 # Be sure to indent four spaces!
@@ -31,6 +32,7 @@ for turn in range(4):
   guess_col = int(raw_input("Guess Col:"))
   if guess_row == ship_row and guess_col == ship_col:
     print "Congratulations! You sunk my battleship!"
+    break #如果此式成立,終止程式
   else:
     if (guess_row < 0 or guess_row > 4) \
     or (guess_col < 0 or guess_col > 4):
@@ -42,6 +44,6 @@ for turn in range(4):
       board[guess_row][guess_col] = "X"
     # Print (turn + 1) here!
   print_board(board)
-    
-#if turn = 3: # 3+1 = 猜第四次了
-  #print "Game Over"
+  print
+  if turn == 3: # 3+1 = 猜第四次了
+    print "Game Over"
