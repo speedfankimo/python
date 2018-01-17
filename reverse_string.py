@@ -1,5 +1,4 @@
 # my way
-
 def reverse(string):
   x = len(string)-1
   new_word = ''
@@ -11,7 +10,7 @@ def reverse(string):
 print reverse("!nohtyP")
 
 
-# Guidance
+# Codecademy's Guidance
 def reverse2(text):
     word = ""
     l = len(text) - 1
